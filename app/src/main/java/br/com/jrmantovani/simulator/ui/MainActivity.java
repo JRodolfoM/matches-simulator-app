@@ -8,10 +8,11 @@ import android.util.Log;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import com.google.android.material.snackbar.Snackbar;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
@@ -33,7 +34,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private MatchesAPI matchesApi;
-    private MatchesAdapter matchesAdapter;
+    private MatchesAdapter matchesAdapter = new MatchesAdapter(Collections.emptyList());
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -61,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.rwMactches.setHasFixedSize(true);
         binding.rwMactches.setLayoutManager(new LinearLayoutManager(this));
+        binding.rwMactches.setAdapter(matchesAdapter);
 
         findMatchesFromApi();
     }
