@@ -13,3 +13,14 @@ App Android Nativo de Simulação de Partidas. Este repositório foi organizado 
 
 1. Explorando o Firebase Para Apps Android Resilientes
    - [release/explorando-o-firebase-para-apps-android-resilientes](https://github.com/JRodolfoM/matches-simulator-app/tree/release/explorando-o-firebase-para-apps-android-resilientes))
+
+
+<img src="https://github.com/JRodolfoM/matches-simulator-app/blob/main/tela_principal.png" width="200" height="400" /> <img src="https://github.com/JRodolfoM/matches-simulator-app/blob/main/tela_detalhes.png" width="200" height="400" />
+
+## Tecnologia utilizadas
+- Retrofit (Consumo API REST Full)
+- FireBase
+- glide
+- RecyclerView
+
+
